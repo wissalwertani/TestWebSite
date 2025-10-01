@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Scribbles - E-commerce Test</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Planet Scribbles</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="booking.html">Event Booking</a>
+      <button class="cart-btn" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Planet Scribbles</h1>
+    <p>Your one-stop shop for prints, gifts, and event bookings.</p>
+    <a href="booking.html" class="btn">Book an Event</a>
+  </section>
+
+  <!-- Product Section -->
+  <main>
+    <h2 class="section-title">Our Products</h2>
+    <div id="product-list" class="grid"></div>
+  </main>
+
+  <!-- Cart Sidebar -->
+  <div id="cart" class="cart">
+    <h3>Your Cart</h3>
+    <div id="cart-items"></div>
+    <p>Total: <span id="cart-total">0</span> QAR</p>
+    <button class="btn checkout" onclick="checkout()">Checkout</button>
+    <button class="btn secondary" onclick="toggleCart()">Close</button>
+  </div>
